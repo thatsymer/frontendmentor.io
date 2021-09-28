@@ -1,0 +1,60 @@
+:root {
+  --primary-pale: hsl(225, 100%, 94%);
+  --primary-bright: hsl(245, 75%, 52%);
+  --neutral-very-pale: hsl(225, 100%, 98%);
+  --neutral-desaturated: hsl(224, 23%, 55%);
+  --neutral-dark: hsl(223, 47%, 23%);
+  --fs-p: 16px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  background: url(/order-summary-component-main/images/pattern-background-desktop.svg)
+    no-repeat;
+  background-size: contain;
+  background-color: var(--primary-pale);
+}
+
+/* Mobile */
+@media screen and (max-width: 376px) {
+  .card-w {
+    width: 80% !important;
+  }
+}
+/* Desktop */
+@media screen and (max-width: 1440px) {
+  .card-w {
+    width: 26%;
+  }
+  p {
+    font-size: var(--fs-p);
+  }
+
+  .btn-clr {
+    color: var(--neutral-very-pale) !important;
+    background-color: var(--neutral-desaturated);
+  }
+  .state:hover {
+    box-shadow: var(--primary-pale) -5px 10px;
+  }
+
+  .change-hov {
+    background-color: var(--neutral-very-pale);
+  }
+  .change-hov:hover {
+    background-color: var(--primary-pale);
+  }
+}
