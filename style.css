@@ -27,25 +27,32 @@ body {
   background-color: var(--primary-pale);
 }
 
+.card-w {
+  width: 26%;
+}
+
 /* Mobile */
 @media screen and (max-width: 376px) {
+  body {
+    background: url(/images/pattern-background-mobile.svg);
+  }
+
   .card-w {
-    width: 80% !important;
+    width: 80%;
   }
 }
 /* Desktop */
 @media screen and (max-width: 1440px) {
-  .card-w {
-    width: 26%;
-  }
   p {
     font-size: var(--fs-p);
   }
 
   .btn-clr {
     color: var(--neutral-very-pale) !important;
-    background-color: var(--neutral-desaturated);
+    background-color: var(--neutral-desaturated) !important;
+    border-radius: 11px;
   }
+
   .state:hover {
     box-shadow: var(--primary-pale) -5px 10px;
   }
