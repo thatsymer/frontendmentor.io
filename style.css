@@ -111,7 +111,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   h5,
   p {
     text-align: left;
@@ -127,7 +127,7 @@ ul {
   h5 {
     padding-top: 4rem;
     padding-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   ul {
     display: flex;
@@ -135,12 +135,13 @@ ul {
     padding: 0 6rem;
   }
   .item-list {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-right: 3rem;
   }
   label {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     display: flex;
     justify-content: flex-start;
+    color: var(--neutral-white-headings);
   }
 }
