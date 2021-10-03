@@ -113,7 +113,9 @@ h3 {
   line-height: 1.3;
   font-weight: 400;
 }
-
+.accordion__collapse {
+  display: block;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
